@@ -17,7 +17,7 @@ export const Native: MarinDeckNative = {
     })
   },
   get: function<T = any>({type, body}: {type: string, body: {[key: string]: any}}): Promise<T> {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve, _) => {
       const uuid = genUUID()
       const eventType = 'mdnativesend'
       const eventListener: EventListener = (event) => {

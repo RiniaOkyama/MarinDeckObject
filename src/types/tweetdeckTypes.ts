@@ -1319,6 +1319,9 @@ interface AccountController {
   _cookieAccountPromise: unknown;
   _unverified: unknown;
   subscription: Array<null | string>;
+  getDefault: () => {
+    getUsername: () => string
+  }
   // insert
   getAll: () => {
     managed: boolean

@@ -4,7 +4,7 @@ export interface MarinDeckObject {
   readonly Version: string
   readonly Native: MarinDeckNative
   // readonly jQuery: JQueryStatic
-  // readonly TwitterAPI: MarinDeckTwitterAPI
+  readonly TwitterAPI: MarinDeckTwitterAPI
 }
 
 export type MarinDeckVersion = string
